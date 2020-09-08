@@ -11,3 +11,7 @@ export const decrement = () => {
         type: types.DECREMENT
     }
 }
+
+export const obj = {
+    type: types.INCREMENT
+}

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import {increment, decrement} from '../store/Actions'
+import {increment, decrement, obj} from '../store/Actions'
 
 export default function Counter() {
 

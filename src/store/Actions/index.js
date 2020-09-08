@@ -1,1 +1,1 @@
-export { increment, decrement} from './counterAction';  
+export { increment, decrement, obj} from './counterAction';  
