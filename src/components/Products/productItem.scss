@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
+
+$color-background: #3fff99;
+
+
+.cards {
+// display: flex;
+// display: -webkit-flex;
+// justify-content: center;
+// -webkit-justify-content: center;
+}   
+
+// .card--1 .card__img,
+// .card--1 .card__img--hover {
+// background-image: url("https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
+// }
+
+.card__like {
+width: 18px;
+}
+
+.card__clock {
+width: 15px;
+vertical-align: middle;
+fill: #ad7d52;
+}
+.card__add {
+font-size: 16px;
+vertical-align: middle;
+margin-left: 5px;
+color: black;
+}
+
+.card__clock-info {
+display: flex;
+flex-direction: row;
+align-items: center;
+
+i{
+    font-size: 30px;
+}
+    
+}
+
+.__icons{
+    color: rgb(0, 104, 0);
+}
+.__icons:hover{
+    cursor: pointer;
+}
+
+.card__img {
+visibility: hidden;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+width: 100%;
+height: 235px;
+border-top-left-radius: 7px;
+border-top-right-radius: 7px;
+}
+
+.card__info-hover {
+position: absolute;
+padding: 16px;
+width: 100%;
+opacity: 0;
+top: 0;
+display: flex;
+justify-content: space-between;
+align-items: flex-start;
+flex-direction: row;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.card__img--hover {
+transition: 0.2s all ease-out;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+width: 100%;
+position: absolute;
+height: 235px;
+border-top-left-radius: 7px;
+border-top-right-radius: 7px;
+top: 0;
+}
+.card {
+margin: 2vw;
+transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
+background-color: #fff;
+position: relative;
+border-radius: 7px;
+overflow: hidden;
+max-width: 300px;
+min-width: 300px;
+width: 100%;
+min-height: 400px;
+max-height: 400px;
+box-shadow: 3px 10px 15px 2px rgba(0, 0, 0, 0.1);
+}
+.card:hover {
+transform: scale(1.1, 1.1);
+cursor: pointer;
+}
+
+.card__info {
+z-index: 2;
+background-color: #fff;
+border-bottom-left-radius: 7px;
+border-bottom-right-radius: 7px;
+padding: 16px 24px 24px 24px;
+}
+
+.card__category {
+font-family: "Raleway", sans-serif;
+text-transform: uppercase;
+font-size: 13px;
+letter-spacing: 2px;
+font-weight: 500;
+color: #313131;
+}
+
+.card__title {
+color: #313131;
+margin-top: 5px;
+margin-bottom: 10px;
+font-family: "Roboto Slab", serif;
+}
+
+.card__price {
+font-weight: 600;
+text-decoration: none;
+color: #ad7d52;
+font-size: 18px;
+font-family: "Roboto Slab", serif;
+}
+.card__new__price {
+    font-family: "Roboto Slab", serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(0, 104, 0);
+    font-size: 20px;
+    margin-right: 10px;
+}
+.card__old__price {
+    font-family: "Roboto Slab", serif;
+    font-weight: 600;
+    text-decoration: line-through;
+    color: #ad7d52;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.card:hover .card__img--hover {
+height: 100%;
+opacity: 0.5;
+}
+
+.card:hover .card__info {
+background-color: transparent;
+position: relative;
+}
+
+.card:hover .card__info-hover {
+opacity: 1;
+z-index: 99;
+display: flex;
+justify-content: space-between;
+flex-direction: row;
+align-items: center;
+}
+
+.card:hover .card__off {
+    color: rgb(0, 104, 0); 
+    padding: 10px;
+    font-weight: bold;
+    font-size: 30px;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.card:hover .card__add {
+    background-color: $color-background; 
+    padding: 10px;
+    &:hover{
+        cursor: pointer;
+    }
+}
+.card:hover .card__new__price{
+    color: rgb(0, 104, 0);
+    display: inline-block;
+}
+.card__bottom{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+.detail__btn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
